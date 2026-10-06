@@ -8,7 +8,34 @@
 
 /* Begin PBXFileReference section */
 		C52F54A030748B3800261F13 /* Map_Go.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Map_Go.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B10000000000000000000001 /* Map_GoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Map_GoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		C10000000000000000000001 /* Map_GoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Map_GoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B10000000000000000000002 /* MapGoAdapterContractTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapGoAdapterContractTests.swift; sourceTree = "<group>"; };
+		B10000000000000000000003 /* MapGoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapGoUITests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
+
+/* Begin PBXBuildFile section */
+		B10000000000000000000004 /* MapGoAdapterContractTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10000000000000000000002 /* MapGoAdapterContractTests.swift */; };
+		B10000000000000000000005 /* MapGoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10000000000000000000003 /* MapGoUITests.swift */; };
+		C10000000000000000000004 /* MapGoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10000000000000000000003 /* MapGoUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		B10000000000000000000006 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C52F549830748B3800261F13 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C52F549F30748B3800261F13;
+			remoteInfo = Map_Go;
+		};
+		C10000000000000000000006 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C52F549830748B3800261F13 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C52F549F30748B3800261F13;
+			remoteInfo = Map_Go;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
 		C52F54A230748B3800261F13 /* Map_Go */ = {
@@ -26,6 +53,20 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		B10000000000000000000022 /* Test Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C10000000000000000000022 /* UI Test Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -33,6 +74,7 @@
 			isa = PBXGroup;
 			children = (
 				C52F54A230748B3800261F13 /* Map_Go */,
+				B10000000000000000000010 /* Map_GoTests */,
 				C52F54A130748B3800261F13 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -41,8 +83,19 @@
 			isa = PBXGroup;
 			children = (
 				C52F54A030748B3800261F13 /* Map_Go.app */,
+				B10000000000000000000001 /* Map_GoTests.xctest */,
+				C10000000000000000000001 /* Map_GoUITests.xctest */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		B10000000000000000000010 /* Map_GoTests */ = {
+			isa = PBXGroup;
+			children = (
+				B10000000000000000000002 /* MapGoAdapterContractTests.swift */,
+				B10000000000000000000003 /* MapGoUITests.swift */,
+			);
+			path = Map_GoTests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -70,7 +123,56 @@
 			productReference = C52F54A030748B3800261F13 /* Map_Go.app */;
 			productType = "com.apple.product-type.application";
 		};
+		B10000000000000000000040 /* Map_GoTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B10000000000000000000050 /* Build configuration list for PBXNativeTarget "Map_GoTests" */;
+			buildPhases = (
+				B10000000000000000000021 /* Test Sources */,
+				B10000000000000000000022 /* Test Frameworks */,
+				B10000000000000000000020 /* Test Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B10000000000000000000041 /* PBXTargetDependency */,
+			);
+			name = Map_GoTests;
+			productName = Map_GoTests;
+			productReference = B10000000000000000000001 /* Map_GoTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		C10000000000000000000040 /* Map_GoUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C10000000000000000000050 /* Build configuration list for PBXNativeTarget "Map_GoUITests" */;
+			buildPhases = (
+				C10000000000000000000021 /* UI Test Sources */,
+				C10000000000000000000022 /* UI Test Frameworks */,
+				C10000000000000000000020 /* UI Test Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C10000000000000000000041 /* PBXTargetDependency */,
+			);
+			name = Map_GoUITests;
+			productName = Map_GoUITests;
+			productReference = C10000000000000000000001 /* Map_GoUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
 /* End PBXNativeTarget section */
+
+/* Begin PBXTargetDependency section */
+		B10000000000000000000041 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C52F549F30748B3800261F13 /* Map_Go */;
+			targetProxy = B10000000000000000000006 /* PBXContainerItemProxy */;
+		};
+		C10000000000000000000041 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C52F549F30748B3800261F13 /* Map_Go */;
+			targetProxy = C10000000000000000000006 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXProject section */
 		C52F549830748B3800261F13 /* Project object */ = {
@@ -82,6 +184,14 @@
 				TargetAttributes = {
 					C52F549F30748B3800261F13 = {
 						CreatedOnToolsVersion = 26.2;
+					};
+					B10000000000000000000040 = {
+						CreatedOnToolsVersion = 26.2;
+						TestTargetID = C52F549F30748B3800261F13;
+					};
+					C10000000000000000000040 = {
+						CreatedOnToolsVersion = 26.2;
+						TestTargetID = C52F549F30748B3800261F13;
 					};
 				};
 			};
@@ -100,12 +210,28 @@
 			projectRoot = "";
 			targets = (
 				C52F549F30748B3800261F13 /* Map_Go */,
+				B10000000000000000000040 /* Map_GoTests */,
+				C10000000000000000000040 /* Map_GoUITests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
 		C52F549E30748B3800261F13 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B10000000000000000000020 /* Test Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C10000000000000000000020 /* UI Test Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -119,6 +245,22 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B10000000000000000000021 /* Test Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B10000000000000000000004 /* MapGoAdapterContractTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C10000000000000000000021 /* UI Test Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C10000000000000000000004 /* MapGoUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -248,21 +390,25 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = Map_Go/Map_Go.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
-				ENABLE_APP_SANDBOX = YES;
+				DEVELOPMENT_TEAM = 8Y8PQLQ83R;
+				ENABLE_APP_SANDBOX = NO;
 				ENABLE_PREVIEWS = YES;
-				ENABLE_USER_SELECTED_FILES = readonly;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "用於將地圖起點定位在使用者目前位置。";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "test.Map-Go";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.example.Map-Go";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				REGISTER_APP_GROUPS = YES;
 				STRING_CATALOG_GENERATE_SYMBOLS = YES;
 				SWIFT_APPROACHABLE_CONCURRENCY = YES;
@@ -278,6 +424,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = Map_Go/Map_Go.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
@@ -286,6 +433,7 @@
 				ENABLE_USER_SELECTED_FILES = readonly;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "用於將地圖起點定位在使用者目前位置。";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/../Frameworks",
@@ -300,6 +448,64 @@
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
 				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		B10000000000000000000060 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGNING_ALLOWED = NO;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				GENERATE_INFOPLIST_FILE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 26.2;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.example.Map-Go.tests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_VERSION = 5.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Map_Go.app/Contents/MacOS/Map_Go";
+			};
+			name = Debug;
+		};
+		B10000000000000000000061 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGNING_ALLOWED = NO;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				GENERATE_INFOPLIST_FILE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 26.2;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.example.Map-Go.tests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_VERSION = 5.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Map_Go.app/Contents/MacOS/Map_Go";
+			};
+			name = Release;
+		};
+		C10000000000000000000060 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGNING_ALLOWED = NO;
+				GENERATE_INFOPLIST_FILE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 26.2;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.example.Map-Go.ui-tests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_VERSION = 5.0;
+				TEST_TARGET_NAME = Map_Go;
+			};
+			name = Debug;
+		};
+		C10000000000000000000061 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGNING_ALLOWED = NO;
+				GENERATE_INFOPLIST_FILE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 26.2;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.example.Map-Go.ui-tests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_VERSION = 5.0;
+				TEST_TARGET_NAME = Map_Go;
 			};
 			name = Release;
 		};
@@ -320,6 +526,24 @@
 			buildConfigurations = (
 				C52F54AC30748B3A00261F13 /* Debug */,
 				C52F54AD30748B3A00261F13 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B10000000000000000000050 /* Build configuration list for PBXNativeTarget "Map_GoTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B10000000000000000000060 /* Debug */,
+				B10000000000000000000061 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C10000000000000000000050 /* Build configuration list for PBXNativeTarget "Map_GoUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C10000000000000000000060 /* Debug */,
+				C10000000000000000000061 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

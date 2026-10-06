@@ -1,8 +1,8 @@
 # iOS 裝置控制 adapter
 
-目前專案已完成 `DeviceProvider` 與 `LocationController` ports，以及可驗證 UI／流程的 fake adapter。
+目前以 Xcode 內建的 `xcrun devicectl list devices --json-output -` 列舉已配對的 iOS 裝置；模擬定位命令則透過 UI Test Runner 的 TCP IPC 接收，再由 `XCUIDevice.shared.location` 套用。
 
-真實 iOS 裝置列舉與模擬定位尚未接入，原因是 repository 尚未指定可用的 Apple 開發者工具、裝置通訊協定、iOS 版本與授權流程。`UnavailableIOSLocationController` 會以可理解的錯誤拒絕命令，避免將未完成的功能誤當成成功定位。
+`devicectl` 掃描不到裝置或回傳錯誤時，UI 會顯示掃描失敗，不會以 fake 裝置冒充真實裝置。實體裝置需要配對、信任電腦與開啟 Developer Mode；Test Runner 仍需在裝置上持續執行。
 
 接入前需要確認：
 
