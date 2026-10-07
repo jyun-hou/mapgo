@@ -120,14 +120,6 @@
 		};
 /* End PBXNativeTarget section */
 
-/* Begin PBXTargetDependency section */
-		A10000000000000000000071 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = A10000000000000000000040 /* LocationTestHost */;
-			targetProxy = A10000000000000000000070 /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
-
 /* Begin PBXProject section */
 		A10000000000000000000032 /* Project object */ = {
 			isa = PBXProject;
@@ -141,7 +133,6 @@
 					};
 					A10000000000000000000041 = {
 						CreatedOnToolsVersion = 26.2;
-						ProvisioningStyle = Automatic;
 						TestTargetID = A10000000000000000000040;
 					};
 				};
@@ -202,6 +193,14 @@
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXTargetDependency section */
+		A10000000000000000000071 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A10000000000000000000040 /* LocationTestHost */;
+			targetProxy = A10000000000000000000070 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
 /* Begin XCBuildConfiguration section */
 		A10000000000000000000060 /* Debug */ = {
 			isa = XCBuildConfiguration;
@@ -210,13 +209,13 @@
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = L83NTDTM25;
+				DEVELOPMENT_TEAM = 5XZ5433C78;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_CFBundleDisplayName = "Location Test Host";
 				INFOPLIST_KEY_NSLocalNetworkUsageDescription = "用於接收 macOS Map Go 的定位控制命令。";
 				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "Used to verify XCTest simulated location.";
 				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.mapgo.locationtesthost;
+				PRODUCT_BUNDLE_IDENTIFIER = com.test.mapgo.locationtesthost;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SDKROOT = iphoneos;
@@ -232,13 +231,13 @@
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = L83NTDTM25;
+				DEVELOPMENT_TEAM = 5XZ5433C78;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_CFBundleDisplayName = "Location Test Host";
 				INFOPLIST_KEY_NSLocalNetworkUsageDescription = "用於接收 macOS Map Go 的定位控制命令。";
 				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "Used to verify XCTest simulated location.";
 				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.mapgo.locationtesthost;
+				PRODUCT_BUNDLE_IDENTIFIER = com.test.mapgo.locationtesthost;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SDKROOT = iphoneos;
@@ -253,11 +252,11 @@
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = L83NTDTM25;
+				DEVELOPMENT_TEAM = 5XZ5433C78;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_NSLocalNetworkUsageDescription = "用於接收 macOS Map Go 的定位控制命令。";
 				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.mapgo.locationtesthost.uitests;
+				PRODUCT_BUNDLE_IDENTIFIER = com.test.mapgo.locationtesthost.uitests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SDKROOT = iphoneos;
@@ -273,11 +272,11 @@
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = L83NTDTM25;
+				DEVELOPMENT_TEAM = 5XZ5433C78;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_NSLocalNetworkUsageDescription = "用於接收 macOS Map Go 的定位控制命令。";
 				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.mapgo.locationtesthost.uitests;
+				PRODUCT_BUNDLE_IDENTIFIER = com.test.mapgo.locationtesthost.uitests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SDKROOT = iphoneos;
